@@ -8,7 +8,7 @@ def mult(x, y):
 def divide(x, y):
   return x / y
 def expo(x, y):
-  return (pow(x, y))
+  return pow(x, y)
 def remain(x,y):
   return x % y
 def undrt(x):
@@ -21,31 +21,31 @@ def uppr(strng):
 
 choice = int(input("\033[1;37;40m Enter your choice:-\033[1;37;40m '\033[33m'\n1.For addition.:\n2.For subtraction:\n3.For multiplication:\n4.For division:\n5.For Exponents:\n6.For Remainder:\n7.For Under Root:\n8.For Decimal To Binary:\n9.For UPPERCASE:"))
 if(choice < 7):
-    numx = float(input("'\033[34m'ENTER A NUMBER:\n"))
-    numy = float(input("'\033[31m'ENTER ANOTHER NUMBER :\n"))
+    numx = float(input("'\033[34m'Enter a number:\n"))
+    numy = float(input("'\033[31m'Enter another number:\n"))
 elif(choice == 7) :
-    numz = float(input("'\033[32m'Enter Your Number:"))
+    numz = float(input("'\033[32m'Enter the number:"))
 elif(choice == 8):
-    numa = int(input("'\033[35m'ENTER YOUR DECIMAL NUMBER:\n"))
+    numa = int(input("'\033[35m'Enter your decimal number:\n"))
 elif(choice == 9):
-    ils = str(input("Enter Your Lowercase String:\n"))
+    ils = str(input("Enter your lowercase string:\n"))
 else:
     print("Invalid input.")
 
 
 
 if choice == 1:
- print(sums_x_y(numx,numy))
+ print(sums_x_y(numx, numy))
 elif choice == 2:
- print(subs(numx,numy))
+ print(subs(numx, numy))
 elif choice == 3:
- print(mult(numx,numy))
+ print(mult(numx, numy))
 elif choice == 4:
- print(divide(numx,numy))
+ print(divide(numx, numy))
 elif choice == 5:
- print(expo(numx,numy))
+ print(expo(numx, numy))
 elif choice == 6:
- print(remain(numx,numy))
+ print(remain(numx, numy))
 elif choice == 7:
  print(undrt(numz))
 elif choice == 8:
@@ -54,4 +54,4 @@ elif choice == 9:
   print(uppr(ils))
 
 
-input('Press ENTER to exit')
+input('Press ENTER to exit...')
