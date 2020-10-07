@@ -1,7 +1,7 @@
 from math import *
-def sums_x_y(x, y):                               
+def sums_x_y(x, y):
  return x + y
-def subs(x, y):                                   
+def subs(x, y):
   return x - y
 def mult(x, y):
   return x * y
